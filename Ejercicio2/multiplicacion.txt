@@ -1,0 +1,24 @@
+DESCRIPCIÓN:
+Programa que multiplica dos números enteros de 8 bits predefinidos, mostrando el producto.
+
+VALORES PREDEFINIDOS:
+- Primer factor (al): 12 (db)
+- Segundo factor (bl): 5 (db)
+
+OPERACIÓN:
+Realiza la multiplicación:  
+Resultado = 12 * 5 = 60
+
+REGISTROS USADOS:
+- al/bl: Para operandos (8 bits)
+- ax: Almacena resultado (16 bits)
+- bx/ecx/edx: Conversión a string
+
+CARACTERÍSTICAS:
+- Usa instrucción MUL para multiplicación 8 bits
+- Incluye chequeo de debug (cmp ax, 60)
+- Buffer optimizado para números de 2 dígitos
+
+EJECUCIÓN ESPERADA:
+El programa mostrará:
+"El resultado de la multiplicación es: 60"

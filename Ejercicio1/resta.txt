@@ -1,0 +1,25 @@
+DESCRIPCIÓN:
+Programa que resta tres números enteros de 16 bits predefinidos, mostrando el resultado final.
+
+VALORES PREDEFINIDOS:
+- Primer número (ax): 60 (dw)
+- Segundo número: 20 (dw)
+- Tercer número: 10 (dw)
+
+OPERACIÓN:
+Realiza la resta:  
+Resultado = 60 - 20 - 10 = 30
+
+REGISTROS USADOS:
+- ax: Para cálculos y resultado
+- bx: Divisor para conversión a string
+- ecx/edx: Manipulación de buffers
+
+CARACTERÍSTICAS:
+- Usa registros de 16 bits (sub)
+- Convierte resultado a ASCII para impresión
+- Incluye verificación de resultado
+
+EJECUCIÓN ESPERADA:
+El programa mostrará:
+"El resultado de la resta es: 30"

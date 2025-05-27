@@ -1,0 +1,25 @@
+DESCRIPCIÓN:
+Programa que divide dos números enteros de 32 bits predefinidos, mostrando cociente y residuo.
+
+VALORES PREDEFINIDOS:
+- Dividendo (eax): 100 (dd)
+- Divisor (ebx): 7 (dd)
+
+OPERACIÓN:
+Realiza división con:  
+- Cociente = 100 / 7 = 14  
+- Residuo = 100 % 7 = 2
+
+REGISTROS USADOS:
+- eax/edx: Para operación DIV
+- ebx: Almacena divisor
+- ecx: Manipulación de strings
+
+CARACTERÍSTICAS:
+- Usa división 32 bits con xor edx, edx
+- Muestra ambos resultados en formato claro
+- Buffer de 11 bytes para números grandes
+
+EJECUCIÓN ESPERADA:
+El programa mostrará:
+"El resultado de la división es: 14 y el residuo es: 2"
